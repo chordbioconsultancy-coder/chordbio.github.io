@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <link rel="icon" href="{{ '/chord_bio_icon_multi_no_text_no_tag.svg' | relative_url }}" sizes="any" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <img class="header-logo" src="{{ '/chord_bio_icon_white_no_text_tag.svg' | relative_url }}" alt="ChordBio logo" aria-hidden="true">
+        <h1>{{ site.title }} - A Quality Consultancy</h1>
+      </div>
+    </header>
+
+    <nav class="menu-bar" id="main-navigation">
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/who/' | relative_url }}">Who We Are</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+        <li><a href="{{ '/services/' | relative_url }}">Services</a></li>
+        <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer>
+      <p>&copy; {{ 'now' | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

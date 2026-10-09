@@ -1,0 +1,12 @@
+[2026-10-08 23:20:44] ERROR '/images/email.svg' not found.
+[2026-10-08 23:20:44] ERROR '/images/phone.svg' not found.
+[2026-10-08 23:20:44] ERROR '/chord_bio_icon_multi_text_tag.svg' not found.
+[2026-10-08 23:20:44] ERROR '/images/linkedin.svg' not found.
+[2026-10-08 23:20:54] ERROR '/images/phone.svg' not found.
+[2026-10-08 23:20:54] ERROR '/images/linkedin.svg' not found.
+[2026-10-08 23:20:54] ERROR '/images/email.svg' not found.
+[2026-10-08 23:20:54] ERROR '/chord_bio_icon_multi_text_tag.svg' not found.
+[2026-10-08 23:21:06] ERROR '/images/email.svg' not found.
+[2026-10-08 23:21:06] ERROR '/chord_bio_icon_multi_text_tag.svg' not found.
+[2026-10-08 23:21:06] ERROR '/images/linkedin.svg' not found.
+[2026-10-08 23:21:06] ERROR '/images/phone.svg' not found.
