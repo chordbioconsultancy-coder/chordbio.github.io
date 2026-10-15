@@ -13,6 +13,11 @@
         <img class="header-logo" src="{{ '/chord_bio_icon_white_no_text_tag.svg' | relative_url }}" alt="ChordBio logo" aria-hidden="true">
         <h1>{{ site.title }} - A Quality Consultancy</h1>
       </div>
+        <button class="hamburger" aria-controls="main-navigation" aria-expanded="false" aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
     </header>
 
     <nav class="menu-bar" id="main-navigation">
@@ -32,5 +37,16 @@
     <footer>
       <p>&copy; {{ 'now' | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
     </footer>
+    <script>
+      const hamburger = document.querySelector('.hamburger');
+      const menuBar = document.querySelector('.menu-bar');
+
+      hamburger.addEventListener('click', () => {
+        const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+        hamburger.setAttribute('aria-expanded', String(!expanded));
+        hamburger.setAttribute('aria-label', expanded ? 'Open navigation menu' : 'Close navigation menu');
+        menuBar.classList.toggle('open');
+      });
+    </script>
   </body>
 </html>
